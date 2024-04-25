@@ -1,0 +1,189 @@
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #98DFD6;
+}
+
+#atas{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:  #98DFD6;
+    display: flex;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 50px;
+  color: #00235B;
+}
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #00235B;
+}
+
+.move {
+  position: relative;
+  animation: moveText 5s ease-in-out infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#clickbakso {
+  width: 200px;
+  height: 200px;
+  background-image: url('pics/bakso.gif');
+  background-size: cover;
+  cursor: pointer;
+  background-position: center;
+}
+
+#upgrade {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#newmenu{
+  display:block;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#jumlahmenu{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.upgrade-button {
+  display: inline-block;
+  background-color: #FFDD83;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  color: #00235B;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.upgrade-button:hover {
+  background-color: #ddd;
+}
+
+.upgrade:hover {
+  background-color: #ddd;
+}
+
+#bakso {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+img {
+  position: absolute;
+}
+
+.popup {
+  display: none;
+  position: relative;
+  z-index: 1000;
+  top: -250px;
+  left: 0;
+  width: 60%;
+  max-width: 500px;
+  background-color: #41a852;
+  color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  animation: popup 0.3s ease-out;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#logo img {
+  width: 160px;
+}
+
+#menu ul{
+  margin:0;
+  padding:0;
+}
+
+#menu ul li {
+  list-style: none;
+  padding:0;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#logo{
+  margin-bottom: 20px;
+  margin-right: 160px;
+}
+
+#menu{
+  margin-top: 50px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.menu-button {
+background-color: #dbdd6f; 
+border: none; 
+color: rgb(45, 22, 54); 
+padding: 12px 24px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 18px; 
+margin: 10px; 
+border-radius: 20px; 
+cursor: pointer; 
+}
+
+#menu ul li a:hover {
+  border-bottom: 5px solid;
+  background-color: #c7d191;
+color: #333333;
+  border-radius: 20px;
+}
